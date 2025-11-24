@@ -19,6 +19,18 @@ async function buildServer() {
         prefix: '/users',
         rewritePrefix: '/users'
     });
+
+    app.register(fastifyHttpProxy, {
+        upstream: 'http://localhost:4002',
+        prefix: '/products',
+        rewritePrefix: '/products'
+    });
+
+    app.register(fastifyHttpProxy, {
+        upstream: 'http://localhost:4003',
+        prefix: '/orders',
+        rewritePrefix: '/orders'
+    });
 }
 
 // starts the server on port 3000 and host 
