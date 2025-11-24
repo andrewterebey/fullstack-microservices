@@ -43,7 +43,6 @@ Those engineers get paid more — because they understand **tradeoffs**, not jus
 
 ## 🗂️ Folder Structure
 fullstack-microservices/
-│
 ├── api-gateway/
 ├── frontend/
 ├── k8s/
@@ -52,7 +51,6 @@ fullstack-microservices/
 ├── order-service/
 ├── product-service/
 ├── user-service/
-│
 ├── .gitignore
 ├── package-lock.json
 ├── package.json
